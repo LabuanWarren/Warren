@@ -1,0 +1,63 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: 
+        "charDesign illustration"
+        "creatureDesign anatomyStudy";
+    grid-gap: 0px;
+    margin-bottom: 180px;
+}
+
+.charDesign {
+    grid-area: charDesign;
+}
+
+.illustration {
+    grid-area: illustration;
+}
+
+.creatureDesign {
+    grid-area: creatureDesign;
+}
+
+.anatomyStudy {
+    grid-area: anatomyStudy;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    column-fill: 100%;
+}
+
+
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.project .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "charDesign"
+            "illustration"
+            "creatureDesign"
+            "anatomyStudy";
+    }
+}

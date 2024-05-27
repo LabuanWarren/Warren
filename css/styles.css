@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  
+  html {
+    color-scheme: dark light;
+  }
+
+body {
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    color: #FFF;
+    z-index: 1;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        45deg,
+        #000000 25%,
+        #000000 25%,
+        #000000 50%,
+        #000000 50%,
+        #444 75%,
+        #000000 75%,
+        #000000 100%
+    );
+    background-size: 3px 3px; /* Size of each noise block */
+    background-repeat:repeat; /* Repeat the pattern */
+
+    
+}
+
+
+
+h1 {
+    font-size: 13.5rem;
+    color: #fafafa; 
+    font-family:"Orbitron", sans-serif;
+    line-height: .9;
+    font-weight: lighter;
+    margin-block-start: 0%;
+}
+
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montreal-medium,sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 84%; /* 53.76px */
+}
+
+h3, p {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #fafafa;
+    font-family: Montreal-book,sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: .5s ease;
+    transition-delay: calc(.05s * var(--index));
+    transform-origin: top;
+    display: inline-block;
+    transform: translateY(100%) rotateX(-90deg);
+}
+
+
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #101010;
+    display: flex; /* Enables flexbox layout for header */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Distributes space evenly between items */
+    padding: 40px; /* Optional padding for spacing */
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav ul li {
+    display: inline;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Main content */
+/* main {
+   
+} */
+
+#intro {
+    margin-top: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 9.375rem;
+    font-style: normal;
+    font-weight:lighter;
+    line-height: 84%;
+    mix-blend-mode: difference;
+    transition: transform 5s;
+    opacity: 0.9;
+}
+
+#intro:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.1);
+        animation-timing-function: ease;
+
+      }
+
+
+#projects {
+    margin-bottom: 40px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.badge {
+
+    /background-color: #252525; 
+    color: white;             /* Text color */
+    padding: 8px 16px;            /* Padding inside the div */
+    display: flex;
+    align-items: center;
+    margin: 20px;             /* Margin around the div */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -250px;
+    /* padding-bottom: 250px; */
+    position: relative;
+    margin-bottom: 0;
+    
+}
+
+.section {
+    background-color:#000000;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0px;
+}
